@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: red;
+    margin: -100px;
+    animation: boxAnimation 10s linear infinite alternate;
+    animation-delay: 5s;
+}
+.box h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-top: 45%;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: green;
+    margin: -100px;
+    animation: boxAnimation 10s linear infinite alternate-reverse;
+    animation-delay: 2.5s;
+    align-items: center;
+    
+}
+.box2 h3{
+   
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    display: flex; 
+    align-items: center;
+    justify-content: center;   
+    margin-top: 45%;
+
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: green;
+    margin: -100px;
+    animation: boxAnimation 10s linear infinite normal;
+    animation-delay: 7.5s;
+    
+}
+.box3 h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-top: 45%;
+    padding: auto;
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: green;
+    margin: -100px;
+    animation: boxAnimation 10s linear infinite reverse;
+    animation-delay: 10s;
+    
+}
+.box4 h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-top: 45%;
+    padding: auto;
+}
+.box5{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: green;
+    margin: -75px;
+    animation: centerBoxAnimation 10s linear infinite alternate;
+    
+}
+.box5 h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-top: 45%;
+    padding: auto;
+}
+@keyframes boxAnimation{
+ 0%{
+     left: 20%;
+     top: 20%;
+     border-radius: 0%;
+     /* opacity: 0%; */
+     background-color: red;
+     color: #000;
+ }
+ 25%{
+    left: 90%;
+    top: 20%;
+    border-radius: 12.5%;
+    /* opacity: 25%; */
+    background-color: green;
+    color: yellow;
+}
+50%{
+    left: 90%;
+    top: 80%;
+    border-radius: 25%;
+    /* opacity: 50%; */
+    background-color: blue;
+    color: red;
+}
+75%{
+    left: 20%;
+    top: 80%;
+    border-radius: 37.5%;
+    /* opacity: 75%; */
+    background-color: black;
+    color: #fff;
+}
+100%{
+    left: 20%;
+    top: 20%;
+    border-radius: 50%;
+    /* opacity: 100%; */
+    background-color: yellow;
+    color: green;
+}
+}
+
+@keyframes centerBoxAnimation{
+    0%{
+        /* left: 20%;
+        top: 20%; */
+        border-radius: 0%;
+        /* opacity: 0%; */
+        background-color: red;
+        color: #000;
+    }
+    25%{
+       /* left: 90%;
+       top: 20%; */
+       border-radius: 12.5%;
+       /* opacity: 25%; */
+       background-color: green;
+       color: yellow;
+   }
+   50%{
+       /* left: 90%;
+       top: 80%; */
+       border-radius: 25%;
+       /* opacity: 50%; */
+       background-color: blue;
+       color: red;
+   }
+   75%{
+       /* left: 20%;
+       top: 80%; */
+       border-radius: 37.5%;
+       /* opacity: 75%; */
+       background-color: black;
+       color: #fff;
+   }
+   100%{
+       /* left: 20%;
+       top: 20%; */
+       border-radius: 50%;
+       /* opacity: 100%; */
+       background-color: yellow;
+       color: green;
+   }
+   }
